@@ -1,0 +1,34 @@
+.list-wrap{
+	padding: 1rem;
+	margin-top: 2rem;
+	background-color: $tan;
+}
+
+.list-title{
+	color: $gray-dk;
+	font-weight: 300;
+}
+
+
+.list-item{
+	display: flex;
+	margin-bottom: .5rem;
+	padding-bottom: .5rem;
+	border-bottom: 1px solid $gray-lt;
+	&:last-child{
+		border-bottom: none;
+	}
+}
+
+.thumb{
+	width: 70px;
+	height: 70px;
+	margin-right: 1rem;
+	border-radius: 2px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.list-details{
+	
+}
