@@ -30,4 +30,18 @@ export function callDB(query='meditation'){
 //   });
 }
 
-export default callAPI;
+export function saveDB(queue){
+  return axios.post('/api/playlist',{
+  	playlist: queue
+  })
+//   .then(function (response) {
+//     console.log(response);
+//     return response.data
+
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   });
+}
+
+

@@ -5,7 +5,8 @@ import exampleVideoData from '../helpers/dummyData'
 
 const initialState = {
   playlist: exampleVideoData,
-  my_playlist: []
+  my_playlist: [],
+  current_vid: ''
 }
 
 function videos(state = initialState , action) {
@@ -24,6 +25,11 @@ function videos(state = initialState , action) {
          return Object.assign({}, state, {
              my_playlist: action.payload
          });
+      case 'CURRENT_VID':
+         console.log("SET CURRENT VID", action.payload)
+         return Object.assign({}, state, {
+             current_vid: action.payload
+        });
 
       case 'QUEUE_VIDEOS':     
            var temp =  Object.assign( { }, state, {

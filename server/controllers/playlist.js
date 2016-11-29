@@ -16,14 +16,14 @@ router.get('/', (req,res)=>{
 router.post('/', (req , res)=>{
 	let newItem = req.body
 	//let prms = req.params
-	//console.log("newItem in CTRLR", req.body )
+	
 
-	req.body.items.map( item =>{
+	req.body.playlist.map( item =>{
 		let vidId =  item.id.videoId;
 		let vidTitle = item.snippet.title;
 		let vidThumb = item.snippet.thumbnails.default.url;
 			
-		new Playlist({ videoId: vidTitle, title: vidTitle, thumbnail:  vidThumb})
+		new Playlist({ videoID: vidId, title: vidTitle, thumbnail:  vidThumb})
 		    .save((err) => {
 		        if (err) console.log(err)
 		    })

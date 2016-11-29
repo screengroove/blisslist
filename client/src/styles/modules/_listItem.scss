@@ -1,7 +1,32 @@
 .list-wrap{
 	padding: 1rem;
-	margin-top: 2rem;
+	margin-top: 0rem;
 	background-color: $tan;
+	h4{
+		position: relative;
+		color: $blue-dk;
+		//border-bottom: 1px solid $blue-dk;
+		background-color: $tan;
+		text-align: center;
+		z-index: 10;
+		span{
+			display: inline-block;
+			padding: .5rem  1rem;
+			background-color: $tan;
+			border-radius: 2px;
+			color: darken($tan, 20%);
+			letter-spacing: 1px;
+		}
+		&:before{
+			content: '';
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			top: 19px; left: 0;
+			background-color: darken($tan, 20%);;
+			z-index: -1;
+		}
+	}
 }
 
 .list-title{

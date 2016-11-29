@@ -3,13 +3,10 @@ import React, { Component } from 'react';
 class ResultItem extends Component {
 	constructor(){
 		super()
-
 	}
 
   handleClick(){
-    this.props.handleAddQueue(this.props.deets)
-    console.log(this.props.deets )
-      
+    this.props.handleAddQueue(this.props.deets)  
   }
 
   render() {   

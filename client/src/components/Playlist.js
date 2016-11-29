@@ -23,7 +23,7 @@ class Playlist extends Component{
 
 	render(){
 		const myPLaylist = this.props.videos.my_playlist.map((item, i)=>{
-			return <ListItem deets={item} key={i}/>
+			return <ListItem deets={item} key={i} playVid={this.props.setCurrentVid}/>
 		})
 		const divStyle = {
         		backgroundColor: '#fafaf8',
@@ -33,6 +33,7 @@ class Playlist extends Component{
 			<div style={divStyle}>
 			<Hero title="Bliss List"/>
 				<div className="list-wrap">
+				<h4><span>MY PLAYLIST</span></h4>
 				{myPLaylist}
 				</div>
 			</div>

@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-    "proxy": "http://localhost:3001/",
+  "proxy": "http://localhost:3001/",
   "devDependencies": {
     "concurrently": "^3.1.0",
     "node-sass": "^3.11.2",
@@ -13,6 +13,7 @@
     "axios": "^0.15.2",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-player": "^0.12.1",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.0",
     "react-router-redux": "^4.0.7",
@@ -23,7 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-     "watch": "concurrently --names 'webpack, node-sass' --prefix name 'npm run start' 'npm run styles:watch'",
+    "watch": "concurrently --names 'webpack, node-sass' --prefix name 'npm run start' 'npm run styles:watch'",
     "styles": "node-sass -o ./src/styles  ./src/styles",
     "styles:watch": "node-sass  -w ./src/styles/main.scss -o ./src/styles/"
   }

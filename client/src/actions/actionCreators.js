@@ -25,7 +25,6 @@ export function fetchPlaylist() {
    return function(dispatch) {
    callDB()
      .then(function (response) {
-        console.log(" fetchPlaylist API RESPONSE", response);
          dispatch({
           type: 'MY_PLAYLIST',
           payload: response.data.playlist
@@ -38,7 +37,6 @@ export function fetchPlaylist() {
 
 export function addToQueue(selectedVideo) { 
 console.log('addToQueue', selectedVideo )
-
 return {
      type: 'QUEUE_VIDEOS',
      payload: selectedVideo
@@ -46,9 +44,21 @@ return {
 }
 
 export function setCurrentCat(selectedCat) { 
-console.log('setCurrentCat', selectedCat )
 return {
      type: 'CURRENT_CATEGORY',
      payload: selectedCat
   }
+}
+
+export function setCurrentVid(selectedVid) { 
+  console.log('selectedVid' , selectedVid)
+    
+   return function(dispatch) {
+      dispatch({
+        type: 'CURRENT_VID',
+       payload: selectedVid
+      })
+
+   }
+
 }
