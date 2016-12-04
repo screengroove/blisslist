@@ -1,0 +1,18 @@
+
+.player-wrap{
+	position: relative;
+	background-color: $black;
+	height: 100%;
+	padding: 3rem 0;
+}
+
+.player-title{
+	text-align: center;
+	font-weight: 300;
+	color: $gray;
+	max-width: 80%;
+	margin: 1rem auto;
+}
+.react-player{
+	//margin-top: 3rem;
+}
