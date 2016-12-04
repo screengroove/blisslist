@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import *  as actionCreators from '../actions/actionCreators';
 
 import CatItem from './CatItem';
-import wallpaper from '../assets/gradient_bg.png';
+import wallpaper from '../assets/leaf_bg.jpg';
 
 class Categories extends Component{
 	constructor(){
@@ -30,7 +30,7 @@ class Categories extends Component{
 			return <CatItem title={item} key={i} getCatResults={queryCategories} setCurrentCat={this.props.setCurrentCat} />
 		})
 		return(
-			<div className="category-wrap" style={divStyle}>
+			<div className="category-wrap" style={divStyle} >
 			  <Link to="/" className="btn-back">
 			    <i className="ion-android-arrow-back"></i>
 			</Link>

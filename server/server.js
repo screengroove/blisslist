@@ -12,7 +12,13 @@ const app = express();
 app.use( morgan('dev') );
 app.use( bodyParser.json() );
 
-app.use('/', express.static(path.join(__dirname, 'public')));
+
+
+if (process.env.NODE_ENV === 'production') {
+  app.use('/',express.static('client/build'));
+} else {
+   app.use('/', express.static(path.join(__dirname, 'public')));
+}
 
 // LISTEN (SET) =============================
 

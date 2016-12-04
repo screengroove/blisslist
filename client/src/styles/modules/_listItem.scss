@@ -1,7 +1,9 @@
 .list-wrap{
 	padding: 1rem;
 	margin-top: 0rem;
+	min-height: 410px;
 	background-color: $tan;
+	overflow-y: auto;
 	h4{
 		position: relative;
 		color: $blue-dk;
@@ -55,5 +57,15 @@
 }
 
 .list-details{
-	
+	position: relative;
+	flex-grow: 1;
+	i{	position: absolute;
+		right: 0; top: 22px;
+		font-size: 2rem;
+		float: right;
+		color: $gray;
+		&.green{
+			color: $green;
+		}
+	}
 }

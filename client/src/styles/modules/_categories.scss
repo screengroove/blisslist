@@ -2,7 +2,6 @@
 	position: relative;
 	height: 100%;
 	width: 100%;
-	//background-color: $turq;
 	background-size: cover;
 	padding-top: 4rem;
 	h2{
@@ -11,31 +10,38 @@
 		max-width: 90%;
 		margin-bottom: 2rem;
 		padding-bottom: 1rem;
-		border-bottom: 1px solid rgba($white, 0.4);
-		color: $white;
+		border-bottom: 1px solid rgba($tan, 0.4);
+		color: $tan;
+		font-weight: 300;
 	}
 }
 
 .cat-grid{
-	padding: 1rem 2rem;
+	padding: 1rem 1rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0 auto;
 }
 .cat-item{
-	height: 90px;
-	width: 90px;
+	height: 85px;
+	width: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: .5rem;
 	margin: 1rem;
-	border: 1px solid rgba(#115C98, 0.7);
+	border: 1px solid rgba($white, 0.3);
 	border-radius: 4px;
-	background-color: rgba(#115C98, 0.5);
+	background-color: rgba($white, 0.2);
 	color: $white;
 	text-align: center;
 	font-weight: 300;
-	font-size: .9rem;
+	font-size: .95rem;
+	letter-spacing: 1px;
+	transition: all .3s ease;
+	&:hover{
+		background-color: rgba($white, 0.7);
+		color: $blue-dk;
+	}
 }

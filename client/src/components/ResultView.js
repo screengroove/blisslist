@@ -50,7 +50,7 @@ class Results extends Component {
     })
     const addBtn = (this.state.queue.length > 0) 
                                   ? <button className="btn-save" onClick={this.handleClick.bind(this)}> Save {this.state.queue.length} to Playlist</button>
-                                   : <p> Please select items below</p>
+                                   : <p> Please select items from below</p>
       
     return (
       <div  style={wrapStyle}>
