@@ -17,7 +17,6 @@ router.post('/', (req , res)=>{
 	let newItem = req.body
 	//let prms = req.params
 	
-
 	req.body.playlist.map( item =>{
 		let vidId =  item.id.videoId;
 		let vidTitle = item.snippet.title;
